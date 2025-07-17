@@ -1,5 +1,5 @@
 {
-  "name": "logem",
+  "name": "@dagmawi222/logem",
   "version": "1.0.0",
   "description": "A tiny logging library for React and React Native applications, with TypeScript support.",
   "main": "dist/index.js",

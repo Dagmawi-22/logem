@@ -5,7 +5,7 @@ A minimal logger for React and React Native apps. Logs console messages, API req
 ## Installation
 
 ```bash
-npm install logem
+npm i @dagmawi222/logem
 ```
 
 ## Example
