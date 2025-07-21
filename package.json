@@ -10,12 +10,23 @@
     "clean": "rm -rf dist",
     "prepare": "npm run build"
   },
-  "keywords": ["logger", "react", "react-native", "typescript", "api", "error", "logging"],
+  "keywords": [
+    "logger",
+    "react",
+    "react-native",
+    "typescript",
+    "api",
+    "error",
+    "logging"
+  ],
   "author": "Dagmawi Teka",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^24.0.15",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
   },
-  "files": ["dist"]
+  "files": [
+    "dist"
+  ]
 }

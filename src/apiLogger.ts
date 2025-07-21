@@ -1,4 +1,5 @@
 import { getLoggerConfig } from "./config";
+import * as fs from "fs";
 
 export const logApiRequest = (
   url: string,
@@ -7,12 +8,13 @@ export const logApiRequest = (
   success: boolean,
   timeMs: number
 ) => {
-  const { enabled, logApi, environment } = getLoggerConfig();
+  const { enabled, logApi, environment, logFilePath } = getLoggerConfig();
   if (!enabled || !logApi || environment === "prod") return;
 
-  console.log(
-    `[API] ${method.toUpperCase()} ${url} -> ${status} (${
-      success ? "✅" : "❌"
-    }) in ${timeMs}ms`
-  );
+  const timestamp = new Date().toISOString();
+  const logLine = `[${timestamp}] [API] ${method.toUpperCase()} ${url} -> ${status} (${
+    success ? "✅" : "❌"
+  }) in ${timeMs}ms\n`;
+  fs.appendFileSync(logFilePath || "logs.txt", logLine);
+  console.log(logLine);
 };
