@@ -1,6 +1,6 @@
 {
   "name": "@dagmawi222/logem",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A tiny logging library for React and React Native applications, with TypeScript support.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
