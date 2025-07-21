@@ -1,6 +1,6 @@
 {
   "name": "logem",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A tiny logging library for React and React Native applications, with TypeScript support.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,12 +10,27 @@
     "clean": "rm -rf dist",
     "prepare": "npm run build"
   },
-  "keywords": ["logger", "react", "react-native", "typescript", "api", "error", "logging"],
+  "keywords": [
+    "logger",
+    "react",
+    "react-native",
+    "typescript",
+    "api",
+    "error",
+    "logging"
+  ],
   "author": "Dagmawi Teka",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dagmawi-22/logem.git"
+  },
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^24.0.15",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
   },
-  "files": ["dist"]
+  "files": [
+    "dist"
+  ]
 }
