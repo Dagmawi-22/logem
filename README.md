@@ -18,7 +18,14 @@ npm install @dagmawi222/logem
 ## Example
 
 ```js
-import { initLogger, log, warn, error, logApiRequest, logError } from "logem";
+import {
+  initLogger,
+  log,
+  warn,
+  error,
+  logApiRequest,
+  logError,
+} from "@dagmawi222/logem";
 
 initLogger({
   enabled: true,
